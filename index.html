@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TG2C9B6');</script>
+<!-- End Google Tag Manager -->
+	<title>Simple Bingo Caller</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="styleSheet.css">
+</head>
+<body>
+		<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TG2C9B6"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<div class="center">
+		<div class="grid" id="mainGrid">
+			
+
+			<!-- LARGE BALLS -->			
+			<div id="bigBallContainer">
+				<div class="bigBall">
+					<div id="letterDisplay"></div>
+					<div id="numberDisplay"></div>
+				</div>
+			</div>
+			
+			<!-- BUTTONS -->
+			<div id="buttonContainer">
+
+				<button id="newGame" class="otherButtons" style=" grid-column-start: 3;">New Game</button>	
+				<button id="repeatNow" class="otherButtons">Repeat Ball</button>	
+				<button id="callButton">
+					<span id="buttonText">Next Ball</span>
+				</button>
+				<button id="showBallsButton" class="otherButtons">Show Balls</button>
+				<button id="showSettingsButton" class="otherButtons">Settings</button>
+				
+
+			</div>
+
+			
+		</div>
+
+
+
+
+		<!-- SMALL BALLS -->	
+		<div id="smallBallsSection" style="display: none;" class="grid">		
+			<div id="smallBallsContainer"></div>
+			<button id="hideSmallBallsButton" class="otherButtons backButton">Back</button>
+		</div>
+
+		<!-- SETTINGS -->		
+		<div id="settings" style="display: none;" class="grid">
+			<div class="settingsGrid">
+				<div class="gridTitle">
+					<h1>Settings</h1>
+				</div>
+
+				<div style="color: green" class="text" id="contactUs">
+					<div>For troubleshooting or to suggest new features contact Jamie:</div>
+					<div><b>305-801-7497</b> or <b>498jam@gmail.com</b></div>
+				</div>
+					
+					
+					
+					<div class="text">Number of Balls</div>
+
+					<select  id="ballNumberSelector" class="otherButtons select">
+						<option>30</option>
+						<option selected="selected">75</option>
+						<option>80</option>
+						<option>90</option>
+						<option>100</option>
+					</select>
+
+
+					<div class="text">Voice Caller 1</div>
+
+					<select  id="voice1" class="otherButtons select">
+						<option>English</option>
+						<option>Spanish</option>
+						<option>French</option>
+						<option>Chinese</option>
+						<option>German</option>
+						<option>Off</option>
+					</select>
+
+					<div class="text">Repeat each call</div>
+					
+					<button class="otherButtons" id="repeatButton"> OFF</button>
+
+
+					<div class="text">Voice Caller 2</div>
+
+					<select  id="voice2" class="otherButtons select">
+						<option>English</option>
+						<option>Spanish</option>
+						<option>French</option>
+						<option>Chinese</option>
+						<option>German</option>
+						<option selected="selected">Off</option>
+					</select>
+
+					<div></div>
+
+					<div></div>
+
+
+					<div class="text">Voice Caller 3</div>
+
+					<select  id="voice3" class="otherButtons select">
+						<option>English</option>
+						<option>Spanish</option>
+						<option>French</option>
+						<option>Chinese</option>
+						<option>German</option>
+						<option selected="selected">Off</option>
+					</select>
+
+
+					
+
+			</div>
+			<button id="hideSettingsButton" class="otherButtons backButton">Back</button>
+		</div>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
